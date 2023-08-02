@@ -15,6 +15,11 @@ namespace UserRegistationProblem
             Console.WriteLine("Enter Your Name with Last Letter Capital");
             string Lname = Console.ReadLine();
             name1.name(Lname);
+            Console.WriteLine("Enter Your Correct Email.Id");
+            string email = Console.ReadLine();
+            Email email1 = new Email();
+            email1.emailVerify(email);
+
 
         }
     }
