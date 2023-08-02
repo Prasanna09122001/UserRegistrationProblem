@@ -11,7 +11,8 @@ namespace UserRegistationProblem
             Name name1 = new Name();
             Email email1 = new Email();
             PhoneNumber phoneNumber1 = new PhoneNumber();
-            Console.WriteLine("Enter Your Name with First Letter Capital");
+            Password password1 = new Password();
+           /* Console.WriteLine("Enter Your Name with First Letter Capital");
             string fname = Console.ReadLine();
             name1.name(fname);
             Console.WriteLine("Enter Your Name with Last Letter Capital");
@@ -22,7 +23,10 @@ namespace UserRegistationProblem
             email1.emailVerify(email);
             Console.WriteLine("Enter Your phone Number");
             string phonenumber = Console.ReadLine();
-            phoneNumber1.phoneno(phonenumber);
+            phoneNumber1.phoneno(phonenumber);*/
+            Console.WriteLine("Enter your password");
+            string password = Console.ReadLine();
+            password1.pass(password);
 
 
         }
