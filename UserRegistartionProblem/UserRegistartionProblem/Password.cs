@@ -16,7 +16,11 @@ namespace UserRegistartionProblem
             if (result)
                 Console.WriteLine("Your password is valid");
             else
-                Console.WriteLine("Your password is Not Valid");
+            {
+                Console.WriteLine("Your password is Not Valid\n Enter the Password Again");
+                password = Console.ReadLine();
+                pass(password);
+            }   
         }
     }
 }

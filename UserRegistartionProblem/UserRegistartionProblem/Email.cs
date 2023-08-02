@@ -15,9 +15,19 @@ namespace UserRegistartionProblem
         {
             bool result = Regex.IsMatch(input, EmailRegex);
             if (result)
+            {
                 Console.WriteLine("Your Email id is valid");
+                Console.WriteLine("\nEnter Your phone Number");
+                string phonenumber = Console.ReadLine();
+                PhoneNumber phoneNumber1 = new PhoneNumber();
+                phoneNumber1.phoneno(phonenumber);
+            }
             else
-                Console.WriteLine("Your Email id is Not Valid");
+            {
+                Console.WriteLine("Your Email id is Not Valid\nEnter your Email id Correctly");
+                input = Console.ReadLine();
+                emailVerify(input);
+            }
         }
     }
 }

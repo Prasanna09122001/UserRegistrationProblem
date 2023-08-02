@@ -14,9 +14,19 @@ namespace UserRegistartionProblem
         {
             bool result = Regex.IsMatch(phonenumber, phone_Regex);
             if (result)
+            {
                 Console.WriteLine("Your Phone Number is valid");
+                Console.WriteLine("\nEnter your password");
+                string password = Console.ReadLine();
+                Password password1 = new Password();
+                password1.pass(password);
+            }
             else
-                Console.WriteLine("Your Phone Number is Not Valid");
+            {
+                Console.WriteLine("Your Phone Number is Not Valid\nEnter the Phone Number Correctly");
+                phonenumber = Console.ReadLine();
+                phoneno(phonenumber);
+            }
 
         }
     }
