@@ -9,7 +9,7 @@ namespace UserRegistartionProblem
 {
     internal class Password
     {
-        string password_Regex= "^[0-9a-zA-Z!@#%&*~$]{8,}$";
+        string password_Regex= "^[A-Z]{1,}[a-z!@#%&*~$0-9]{1,}$";
         public void pass(string password)
         {
             bool result = Regex.IsMatch(password, password_Regex);
