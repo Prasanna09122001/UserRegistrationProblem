@@ -7,6 +7,7 @@ namespace UserRegistationProblem
         static void Main()
         {
             Console.WriteLine("Welcome to the User Registation Problem");
+
             Name name1 = new Name();
             Email email1 = new Email();
             PhoneNumber phoneNumber1 = new PhoneNumber();
@@ -26,7 +27,6 @@ namespace UserRegistationProblem
             Console.WriteLine("Enter your password");
             string password = Console.ReadLine();
             password1.pass(password);
-
 
         }
     }

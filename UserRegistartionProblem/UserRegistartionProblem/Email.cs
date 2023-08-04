@@ -16,6 +16,7 @@ namespace UserRegistartionProblem
             bool result = Regex.IsMatch(input, EmailRegex);
             if (result)
             {
+
                 Console.WriteLine("Your Email is valid");
                 return true;
             }
@@ -23,6 +24,7 @@ namespace UserRegistartionProblem
             {
                 Console.WriteLine("Your Email is Not Valid");
                 return false;
+
             }
         }
     }
