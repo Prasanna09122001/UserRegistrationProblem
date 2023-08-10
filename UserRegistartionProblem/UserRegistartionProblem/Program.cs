@@ -12,6 +12,7 @@ namespace UserRegistationProblem
             Email email1 = new Email();
             PhoneNumber phoneNumber1 = new PhoneNumber();
             Password password1 = new Password();
+
              Console.WriteLine("Enter Your Name with First Letter Capital");
              string fname = Console.ReadLine();
              name1.Firstname(fname);
@@ -27,6 +28,7 @@ namespace UserRegistationProblem
             Console.WriteLine("Enter your password");
             string password = Console.ReadLine();
             password1.pass(password);
+
 
         }
     }

@@ -17,6 +17,9 @@ namespace UserRegistartionProblem
         PhoneNumber phoneNumber1 = new PhoneNumber();
         Password password1 = new Password();
 
+        int count = 0;
+
+
         public string UserDetails(string name,string lname, string email, string phone,string pass)
         {
             if (name1.Firstname(name) && (name1.LastName(lname)) && (email1.emailVerify(email)) && (phoneNumber1.phoneno(phone)) && (password1.pass(pass)))
@@ -28,5 +31,13 @@ namespace UserRegistartionProblem
                 return "Incorrect";
             }
         }
+
+        public string EmailVerify(string email)
+        {
+            if (email1.emailVerify(email))
+                return "Correct";
+            else
+                return "Incorrcet";
+}
     }
 }
