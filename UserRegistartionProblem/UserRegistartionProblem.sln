@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserRegistartionProblem", "UserRegistartionProblem\UserRegistartionProblem.csproj", "{E1D066C3-1F79-4703-BD36-8E7FD1FC398D}"
+<<<<<<< HEAD
+=======
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistartionTest", "UserRegistartionTest\UserRegistartionTest.csproj", "{1950871C-79D3-4257-A097-A5A51E9D225D}"
+>>>>>>> UC8-PasswordRule4
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{E1D066C3-1F79-4703-BD36-8E7FD1FC398D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1D066C3-1F79-4703-BD36-8E7FD1FC398D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1D066C3-1F79-4703-BD36-8E7FD1FC398D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1950871C-79D3-4257-A097-A5A51E9D225D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1950871C-79D3-4257-A097-A5A51E9D225D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1950871C-79D3-4257-A097-A5A51E9D225D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1950871C-79D3-4257-A097-A5A51E9D225D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
