@@ -11,6 +11,7 @@ namespace UserRegistartionTest
             string test = tester.UserDetails("Prasanna","Venkatesh","pras@gmail.com","6369988552","Prasanna@123");
             Assert.AreEqual("Correct",test);
         }
+
         [Test]
         public void TestNullRegistation()
         {
@@ -37,5 +38,6 @@ namespace UserRegistartionTest
                 Assert.AreEqual("Correct", test);
             }
         }
+
     }
 }

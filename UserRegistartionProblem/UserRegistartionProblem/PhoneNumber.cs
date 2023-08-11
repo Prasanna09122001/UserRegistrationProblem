@@ -14,14 +14,21 @@ namespace UserRegistartionProblem
         public bool phoneno(string phonenumber)
         {
             bool result = Regex.IsMatch(phonenumber, phone_Regex);
-            if (result)
-            {
-                Console.WriteLine("Your Phone Number is valid");
-                return result;
-            }
-            else
-                Console.WriteLine("Your Phone Number is Not Valid"); 
-                return result;
+
+
+                if (result)
+                {
+                    Console.WriteLine("Phone Number is Valid");
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("The phone number is invalid");
+                    return false;
+                }
+            
+
+
         }
     }
 }

@@ -18,6 +18,8 @@ namespace UserRegistartionProblem
         Password password1 = new Password();
 
 
+
+
         public string UserDetails(string name,string lname, string email, string phone,string pass)
         {
             try
@@ -35,12 +37,13 @@ namespace UserRegistartionProblem
                 return "Do it Correctly";
             }
         }
+
         public string EmailVerify(string email)
         {
             if (email1.emailVerify(email))
                 return "Correct";
             else
                 return "Incorrcet";
-        }
+}
     }
 }
