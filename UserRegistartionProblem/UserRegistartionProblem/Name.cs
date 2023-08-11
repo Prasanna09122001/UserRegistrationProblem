@@ -10,22 +10,21 @@ namespace UserRegistartionProblem
 {
     public class Name
     {
+        string name_Regex = "^[A-Z]{1}[a-z]{2,}";
         public bool Firstname(string name)
         {
-            string name_Regex = "^[A-Z]{1}[a-z]{2,}";
+            bool result = Regex.IsMatch(name, name_Regex);
+            if (result)
             {
-                bool result = Regex.IsMatch(name, name_Regex);
-                if (result)
-                {
-                    Console.WriteLine("The Given Name " + name + " is in Correct Format");
-                    return true;
-                }
-                else
-                {
-                    Console.WriteLine("The Given Name " + name + " is Not in Correct Format");
-                    return false;
-                }
+                Console.WriteLine("The Given Name " + name + " is in Correct Format");
+                return true;
             }
+            else
+            {
+                Console.WriteLine("The Given Name " + name + " is Not in Correct Format");
+                return false;
+            }
+
         }
         public bool LastName(string Lname)
         {
@@ -44,5 +43,7 @@ namespace UserRegistartionProblem
                 }
             }
         }
+        public bool FirstName1(string input) => Regex.IsMatch(input, name_Regex) ? true : false;
+        public bool LastName1(string input) => Regex.IsMatch(input, name_Regex) ? true : false;
     }
 }

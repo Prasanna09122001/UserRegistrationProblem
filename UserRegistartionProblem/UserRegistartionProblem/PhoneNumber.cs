@@ -23,5 +23,7 @@ namespace UserRegistartionProblem
                 Console.WriteLine("Your Phone Number is Not Valid"); 
                 return result;
         }
+        public bool phoneno1 (string input) => Regex.IsMatch(input, phone_Regex)? true : false;
     }
+   
 }
