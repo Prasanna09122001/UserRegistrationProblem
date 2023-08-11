@@ -13,6 +13,20 @@ namespace UserRegistartionTest
         }
 
         [Test]
+        public void TestNullRegistation()
+        {
+            Tester tester = new Tester();
+            string test = tester.UserDetails("Prasanna", null , "pras@gmail.com", "6369988552", "Prasanna@123");
+            Assert.AreEqual("Do it Correctly", test);
+        }
+        [Test]
+        public void TestNullRegistation1()
+        {
+            Tester tester = new Tester();
+            string test = tester.UserDetails("Prasanna","Venkatesh", "pras@gmail.com", null, "Prasanna@123");
+            Assert.AreEqual("Do it Correctly", test);
+        }
+        [Test]
         public void MultipleEmail()
         {
             Tester tester = new Tester();

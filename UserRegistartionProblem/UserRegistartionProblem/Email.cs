@@ -27,5 +27,6 @@ namespace UserRegistartionProblem
 
             }
         }
+        public bool emailverify1(string input) => Regex.IsMatch(input, EmailRegex) ? true : false;
     }
 }
