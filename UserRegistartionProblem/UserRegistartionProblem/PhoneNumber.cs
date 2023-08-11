@@ -30,5 +30,7 @@ namespace UserRegistartionProblem
 
 
         }
+        public bool phoneno1 (string input) => Regex.IsMatch(input, phone_Regex)? true : false;
     }
+   
 }

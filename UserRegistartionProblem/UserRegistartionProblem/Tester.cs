@@ -24,7 +24,7 @@ namespace UserRegistartionProblem
         {
             try
             {
-                if (name1.Firstname(name) && (name1.LastName(lname)) && (email1.emailVerify(email)) && (phoneNumber1.phoneno(phone)) && (password1.pass(pass)))
+                if (name1.FirstName1(name) && (name1.LastName1(lname)) && (email1.emailverify1(email)) && (phoneNumber1.phoneno1(phone)) && (password1.pass1(pass)))
                 {
                     return "Correct";
                 }

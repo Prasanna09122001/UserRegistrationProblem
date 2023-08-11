@@ -27,5 +27,6 @@ namespace UserRegistartionProblem
 
             }   
         }
+        public bool pass1(string input) => Regex.IsMatch(input, password_Regex)? true : false;
     }
 }
